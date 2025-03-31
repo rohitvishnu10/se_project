@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import Image from 'next/image'
 import HomeCard from './HomeCard'
 import { useRouter } from 'next/navigation'; 
 import { Input } from "@/components/ui/input"
@@ -9,8 +8,6 @@ import MeetingModal from './MeetingModal'
 import { useUser } from '@clerk/nextjs';
 import { Call, useStreamVideoClient } from '@stream-io/video-react-sdk';
 
-import { title } from 'process';
-import { Description } from '@radix-ui/react-dialog';
 import { toast } from 'sonner';
 import { Textarea } from './ui/textarea';
 import ReactDatePicker from 'react-datepicker';

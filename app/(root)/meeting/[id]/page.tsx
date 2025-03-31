@@ -8,12 +8,10 @@ import { Loader } from 'lucide-react';
 import React, { useState, use } from 'react'
 
 // Add type for MeetingSetup props
-interface MeetingSetupProps {
-  setIsSetupComplete: (value: boolean) => void;
-}
+
 
 const Meeting = ({ params }: { params: Promise<{ id: string }> }) => { 
-  const { user, isLoaded } = useUser();
+  const { isLoaded } = useUser();
   // Specify boolean type for the state
   const [isSetupComplete, setIsSetupComplete] = useState<boolean>(false);
   
